@@ -1,5 +1,7 @@
 :root {
---color: #fff;
+--color: #222;
+--bg-color: #fdde2e;
+--bg-color-form: #fff;
 }
 
 /* FONTS */
@@ -58,6 +60,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "roboto", "arial", sans-serif;
+  background-color: #222;
+  color: var(--color);
 }
 
 img {
@@ -67,9 +71,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1300px;
-  padding-left: 25px;
-  padding-right: 25px;
+  max-width: 650px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -78,4 +82,109 @@ img {
   flex-grow: 1;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+
+/* SITE-BACK-SECTION */
+
+.site-back-section {
+display: flex;
+flex-direction: column;
+background-color: var(--bg-color);
+
+}
+
+.site-back-section-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 40px;
+}
+
+.site-back-section-heading {
+ margin: 0;
+font-size: 20px;
+}
+.site-back-section-button {
+
+}
+.site-back-section-img {
+
+}
+
+
+.site-back-section-footer {
+display: flex;
+justify-content: flex-end;
+margin: 0;
+padding: 40px;
+}
+.site-back-section-footer-links {
+}
+.back-section-footer-link {
+  text-decoration: none;
+  color: var(--color);
+}
+
+.back-section-footer-link:not(:last-child){
+  margin-right: 40px;
+}
+
+
+/* PROFILE-FORM */
+
+
+.profile-form {
+width: 100%;
+max-width: 650px;
+position: relative;
+left: 40px;
+background-color: var(--bg-color-form);
+margin: 0;
+padding: 60px 30px 40px;
+box-shadow: 0 10px 15px -3px rgb(0 0 0 / 20%);
+}
+
+.profile-form-img {
+  position: absolute;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  left: 30px;
+    top: 0;
+
+}
+
+.wrapper-names{
+  display: flex;
+flex-grow: 1;
+}
+
+.profile-settings-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+.profile-settings-form:not(:last-child) {
+margin-bottom: 24px;
+}
+
+.profile-setting-form-label {
+  text-transform: uppercase;
+margin-bottom: 8px;
+font-size: 18px;
+font-weight: 700;
+}
+
+.profile-setting-form-field {
+  display: block;
+  padding: 8px 2px;
+  border: none;
+border-bottom: 1px solid;
+}
+
+.profile-setting-form-field-textarea {
+  min-height: 100px;
+  resize: vertical;
 }
